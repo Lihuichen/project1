@@ -1,0 +1,497 @@
+html,body {
+	width:  99%;
+	height: 99%;
+	
+}
+
+#wrap{
+  width: 900px; 
+  margin: 0 auto; 
+}
+/*Here is the position and font attributes for body text*/
+.text{
+  font-family: 'Space Mono', monospace;
+  font-size: 10em;
+  position:absolute;
+}
+/*Here is position and animation attributes for the orange subtext*/
+.text2{
+  width:270px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 3em;
+  font-weight:lighter;
+  position:relative;
+  color:orange;
+  opacity: 0;
+  top:-93px;
+-webkit-animation-name: text2_fade, text2_move;
+-webkit-animation-duration:2s,4s;
+-webkit-animation-delay:5s;
+-webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes text2_fade {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@-webkit-keyframes text2_move {
+ 0% { left: 0px; }
+ 100% { left: 800px; }
+}
+#container{
+  width: 700px;
+  height: 300px;
+  position: relative;
+  left: 20%;
+  top: 100%; /* for optical centering */
+  margin-top: 120px;
+  margin-left: -100px;
+}
+
+
+#eat{
+  opacity: 0;
+  position:absolute;
+-webkit-animation-name: eat_fade, eat_move;
+-webkit-animation-duration: 2s, 4s;
+-webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes eat_fade {
+0% { opacity: 0; }
+100% { opacity: 1; }
+
+}
+
+@-webkit-keyframes eat_move {
+ 0% { top: 0px; }
+ 100% { top: -275px; }
+}
+
+#to{
+  opacity: 0;
+  position:absolute;
+  -webkit-animation-name: to_fade, to_move;
+  -webkit-animation-duration: 2s, 4s;
+  -webkit-animation-fill-mode: forwards;
+  animation-delay: 2s;
+}
+
+@-webkit-keyframes to_fade {
+0% { opacity: 0; }
+100% { opacity: 1; }
+}
+
+@-webkit-keyframes to_move {
+ 0% { top: 0px; }
+ 100% { top: -135px; }
+}
+
+#nourish{
+  position: absolute;
+}
+
+#your{
+  position:absolute;
+  opacity: 0;
+-webkit-animation-name: your_fade, your_move;
+-webkit-animation-duration: 2s, 4s;
+-webkit-animation-fill-mode: forwards;
+animation-delay: 2s;
+}
+
+@-webkit-keyframes your_fade {
+0% { opacity: 0; }
+100% { opacity: 1; }
+}
+
+@-webkit-keyframes your_move {
+ 0% { top: 0px; }
+ 100% { top: 140px; }
+}
+
+#body{
+  opacity: 0;
+  position:absolute;
+  margin-top: 175px;
+-webkit-animation-name: body_fade, body_move;
+-webkit-animation-duration: 2s, 4s;
+-webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes body_fade {
+0% { opacity: 0; }
+100% { opacity: 1; }
+}
+
+@-webkit-keyframes body_move {
+ 0% { top: 0px; }
+ 100% { top: 280px;}
+}
+
+/*This is all the bagel stuff*/
+
+/*actual image of bagel. I placed left and top cordinates so that the all the images would sit flush to the baseline of the text*/
+.bagel{
+  position:relative;
+  left:2px;
+  top:9px;
+}
+/*here are the white squares that are on top of the image*/
+.bagelcover{
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top:545px;
+  left:100px;
+}
+/*here are all the animation elements that make each white square "blink"*/
+#bagelslice1{
+  position:absolute;
+  left: 0px;
+  top: 0px;
+  width: 50px;
+  height: 50px;
+  background: white;
+  opacity:0;
+-webkit-animation-name: bagelslice1_blink;
+-webkit-animation-duration: 4s;
+animation-delay:7s;
+animation-iteration-count: infinite;
+}
+@-webkit-keyframes bagelslice1_blink {
+0% {opacity: 0;}
+19% {opacity:0;}
+20% {opacity: 1}
+99% {opacity: 1}
+100% { opacity: 0; }
+}
+#bagelslice2{
+  left: 50px;
+  top: 0px;
+  position:absolute;
+  width: 50px;
+  height: 50px;
+  background: white;
+  opacity:0;
+-webkit-animation-name: bagelslice2_blink;
+-webkit-animation-duration: 4s;
+animation-delay:7s;
+animation-iteration-count: infinite;
+}
+@-webkit-keyframes bagelslice2_blink {
+39%{opacity: 0}
+40% { opacity: 1; }
+99% {opacity: 1}
+100% { opacity: 0; }
+}
+#bagelslice3{
+  position:absolute;
+  left: 50px;
+  top: 50px;
+  width: 50px;
+  height: 50px;
+  background: white;
+  opacity:0;
+-webkit-animation-name: bagelslice3_blink;
+-webkit-animation-duration: 4s;
+animation-delay:7s;
+animation-iteration-count: infinite;
+}
+@-webkit-keyframes bagelslice3_blink {
+59% { opacity: 0; }
+60% { opacity: 1; }
+99% {opacity: 1}
+100% { opacity: 0; }
+}
+#bagelslice4{
+  position:absolute;
+  left: 0px;
+  top: 50px;
+  width: 50px;
+  height: 50px;
+  background: white;
+    opacity: 0;
+-webkit-animation-name: bagelslice4_blink;
+-webkit-animation-duration: 4s;
+animation-delay:7s;
+animation-iteration-count: infinite;
+}
+@-webkit-keyframes bagelslice4_blink {
+79% { opacity: 0; }
+80% { opacity: 1; }
+99% {opacity: 1}
+100% { opacity: 0; }
+}
+/*This is all the cucumber stuff*/
+.cucumber{
+  position:relative;
+  left:2px;
+  top:9px;
+}
+.cucumbercover{
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top:390px;
+  left:100px;
+}
+#cucumberslice1{
+  position:absolute;
+  left: 0px;
+  top: 0px;
+  width: 50px;
+  height: 50px;
+  background: white;
+  opacity: 0;
+-webkit-animation-name: cucumberslice1_blink;
+-webkit-animation-duration: 4s;
+animation-delay:7s;
+animation-iteration-count: infinite;
+}
+@-webkit-keyframes cucumberslice1_blink {
+79% { opacity: 0; }
+80% { opacity: 1; }
+99% {opacity: 1}
+100% { opacity: 0; }
+}
+#cucumberslice2{
+  left: 50px;
+  top: 0px;
+  position:absolute;
+  width: 50px;
+  height: 50px;
+  background: white;
+  opacity:0;
+  -webkit-animation-name: cucumberslice2_blink;
+  -webkit-animation-duration: 4s;
+  animation-delay:7s;
+  animation-iteration-count: infinite;
+}
+@-webkit-keyframes cucumberslice2_blink {
+0% {opacity: 0;}
+19% {opacity:0;}
+20% {opacity: 1}
+99% {opacity: 1}
+100% { opacity: 0; }
+}
+#cucumberslice3{
+  position:absolute;
+  left: 50px;
+  top: 50px;
+  width: 50px;
+  height: 50px;
+  background: white;
+  opacity:0;
+-webkit-animation-name: cucumberslice3_blink;
+-webkit-animation-duration: 4s;
+animation-delay:7s;
+animation-iteration-count: infinite;
+}
+@-webkit-keyframes cucumberslice3_blink {
+39%{opacity: 0}
+40% { opacity: 1; }
+99% {opacity: 1}
+100% { opacity: 0; }
+}
+#cucumberslice4{
+  position:absolute;
+  left: 0px;
+  top: 50px;
+  width: 50px;
+  height: 50px;
+  background: white;
+  opacity:0;
+-webkit-animation-name: cucumberslice4_blink;
+-webkit-animation-duration: 4s;
+animation-delay:7s;
+animation-iteration-count: infinite;
+}
+@-webkit-keyframes cucumberslice4_blink {
+59% { opacity: 0; }
+60% { opacity: 1; }
+99% {opacity: 1}
+100% { opacity: 0; }
+}
+/*This is all the tomato stuff*/
+.tomato{
+  position:relative;
+  left:2px;
+  top:9px;
+}
+.tomatocover{
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top:248px;
+  left:101px;
+}
+#tomatoslice1{
+  position:absolute;
+  left: 0px;
+  top: 0px;
+  width: 50px;
+  height: 50px;
+  background: white;
+  opacity: 0;
+-webkit-animation-name: tomatoslice1_blink;
+-webkit-animation-duration: 4s;
+animation-delay:7s;
+animation-iteration-count: infinite;
+}
+@-webkit-keyframes tomatoslice1_blink {
+59% { opacity: 0; }
+60% { opacity: 1; }
+99% {opacity: 1}
+100% { opacity: 0; }
+}
+#tomatoslice2{
+  left: 50px;
+  top: 0px;
+  position:absolute;
+  width: 50px;
+  height: 50px;
+  background: white;
+  opacity:0;
+  -webkit-animation-name: tomatoslice2_blink;
+  -webkit-animation-duration: 4s;
+  animation-delay:7s;
+  animation-iteration-count: infinite;
+}
+@-webkit-keyframes tomatoslice2_blink {
+79% { opacity: 0; }
+80% { opacity: 1; }
+99% {opacity: 1}
+100% { opacity: 0; }
+}
+#tomatoslice3{
+  position:absolute;
+  left: 50px;
+  top: 50px;
+  width: 50px;
+  height: 50px;
+  background: white;
+  opacity:0;
+-webkit-animation-name: tomatoslice3_blink;
+-webkit-animation-duration: 4s;
+animation-delay:7s;
+animation-iteration-count: infinite;
+}
+@-webkit-keyframes tomatoslice3_blink {
+0% {opacity: 0;}
+19% {opacity:0;}
+20% {opacity: 1}
+99% {opacity: 1}
+100% { opacity: 0; }
+}
+#tomatoslice4{
+  position:absolute;
+  left: 0px;
+  top: 50px;
+  width: 50px;
+  height: 50px;
+  background: white;
+  opacity:0;
+-webkit-animation-name: tomatoslice4_blink;
+-webkit-animation-duration: 4s;
+animation-delay:7s;
+animation-iteration-count: infinite;
+}
+@-webkit-keyframes tomatoslice4_blink {
+39%{opacity: 0}
+40% { opacity: 1; }
+99% {opacity: 1}
+100% { opacity: 0; }
+}
+/*This is all the orange stuff*/
+.orange{
+  position:relative;
+  left:2px;
+}
+.orangecover{
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top:113px;
+  left:99px;
+}
+#orangeslice1{
+  position:absolute;
+  left: 0px;
+  top: 0px;
+  width: 50px;
+  height: 50px;
+  background: white;
+  opacity: 0;
+-webkit-animation-name: orangeslice1_blink;
+-webkit-animation-duration: 4s;
+animation-delay:7s;
+animation-iteration-count: infinite;
+}
+@-webkit-keyframes orangeslice1_blink {
+39%{opacity: 0}
+40% { opacity: 1; }
+99% {opacity: 1}
+100% { opacity: 0; }
+}
+#orangeslice2{
+  left: 50px;
+  top: 0px;
+  position:absolute;
+  width: 50px;
+  height: 50px;
+  background: white;
+  opacity:0;
+  -webkit-animation-name: orangeslice2_blink;
+  -webkit-animation-duration: 4s;
+  animation-delay:7s;
+  animation-iteration-count: infinite;
+}
+@-webkit-keyframes orangeslice2_blink {
+59% { opacity: 0; }
+60% { opacity: 1; }
+99% {opacity: 1}
+100% { opacity: 0; }
+}
+#orangeslice3{
+  position:absolute;
+  left: 50px;
+  top: 50px;
+  width: 50px;
+  height: 50px;
+  background: white;
+  opacity:0;
+-webkit-animation-name: orangeslice3_blink;
+-webkit-animation-duration: 4s;
+animation-delay:7s;
+animation-iteration-count: infinite;
+}
+@-webkit-keyframes orangeslice3_blink {
+79% { opacity: 0; }
+80% { opacity: 1; }
+99% {opacity: 1}
+100% { opacity: 0; }
+}
+#orangeslice4{
+  position:absolute;
+  left: 0px;
+  top: 50px;
+  width: 50px;
+  height: 50px;
+  background: white;
+  opacity:0;
+-webkit-animation-name: orangeslice4_blink;
+-webkit-animation-duration: 4s;
+animation-delay:7s;
+animation-iteration-count: infinite;
+}
+@-webkit-keyframes orangeslice4_blink {
+0% {opacity: 0;}
+19% {opacity:0;}
+20% {opacity: 1}
+99% {opacity: 1}
+100% { opacity: 0; }
+}
+
+
